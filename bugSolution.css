@@ -1,0 +1,21 @@
+The solution involves restructuring the CSS to enhance clarity and predictability:
+
+```css
+p {
+  color: red; /* Default color for all paragraphs */
+}
+div p {
+  color: blue; /* Override color for paragraphs within divs */
+}
+```
+
+Alternatively, we can use more specific selectors to avoid conflicts, perhaps introducing a class instead:
+
+```css
+.special-paragraph {
+  color: blue;
+}
+```
+Then, apply this class directly to the affected paragraphs in the HTML.
+
+This improved structure makes the CSS easier to understand and maintain, reducing the likelihood of unexpected behavior caused by specificity issues.
